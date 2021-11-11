@@ -1,0 +1,61 @@
+.custom-toogle{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.my-toogle{
+    min-width: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    border: 2px solid #cdb9ff;
+    border-radius: 14px;
+    transition: .3s ease-in-out all;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.my-toogle.container-on{
+    border-color: #6341e2;
+    background-color: #6341e2;
+}
+
+.custom-toogle.container-off{
+    border-color: #cdb9ff;
+}
+
+.toogle-circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: .3s ease-in-out all;
+}
+
+.toogle-circle.first-circle{
+    background-color: #6341e2;
+}
+
+.inner-circle{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border: 2px solid #cdb9ff;
+    border-radius: 8px;
+    transition: .3s ease-in-out all;
+}
+
+.inner-circle.inner-on{
+    border-color: white;
+}
+
+.toogle-label{
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: bold;
+}

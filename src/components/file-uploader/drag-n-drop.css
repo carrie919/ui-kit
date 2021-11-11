@@ -1,0 +1,7 @@
+.drag-and-drop-area {
+    height: 95px;
+    width: 100%;
+    position: relative;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}

@@ -1,0 +1,49 @@
+.custom-tooltip {
+    position: absolute;
+    display: inline-block;
+    height: 40px;
+    min-width: 130px;
+    background-color: rgb(0, 0, 0, 0.1);
+    border-radius: 4px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.custom-tooltip::after {
+    content: "";
+    position: absolute;
+    border-width: 8px;
+    border-style: solid;
+}
+
+.custom-tooltip.top::after{
+    bottom: 100%;
+    border-color: transparent transparent rgb(0, 0, 0, 0.1) transparent;
+}
+
+.left::after{
+    left: 25%;
+}
+
+.right::after{
+    left: 75%;
+}
+
+.custom-tooltip.bottom::after{
+    top: 100%;
+    border-color: rgb(0, 0, 0, 0.1) transparent transparent  transparent;
+}
+
+.custom-tooltip.side-left::after{
+    right: 100%;
+    transform: translateY(60%);
+    border-color: transparent rgb(0, 0, 0, 0.1) transparent  transparent;
+}
+
+.custom-tooltip.side-right::after{
+    left: 100%;
+    transform: translateY(60%);
+    border-color: transparent transparent  transparent rgb(0, 0, 0, 0.1);
+}

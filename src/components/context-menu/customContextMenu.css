@@ -1,0 +1,38 @@
+.custom-context {
+    width: 200px;
+    border: solid 1px #ccc;
+    display: inline-block;
+    margin: 5px;
+    /* background: #FFF; */
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000;
+    font-family: sans-serif;
+    cursor: pointer;
+    font-size: 12px;
+    border: 1px solid #f1f1f1;
+    border-radius: 2px;
+    box-shadow: 0.1em 0.1em 0.75em rgba(0, 0, 0, 0.3);
+}
+
+.custom-context-item {
+    text-align: start;
+    border-bottom: dotted 1px #ddd;
+    padding: 5px 25px;
+    position: relative;
+}
+
+.custom-context-item-last {
+    text-align: start;
+    padding: 5px 25px;
+    position: relative;
+}
+
+.check-mark {
+    position: absolute;
+    top: 1px;
+    left: 130px;
+}
+
+.empty-context-menu {
+    display: none;
+}

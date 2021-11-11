@@ -1,0 +1,28 @@
+.badge {
+    min-width: 20x;
+    height: 20px;
+    display: inline-block;
+    color: #6e41e2;
+    padding: 0 8px;
+    font-size: 75%;
+    font-family: sans-serif;
+    font-weight: bolder;
+    line-height: 1.6;
+    text-align: center;
+    border: 2px solid #f1f1f1;
+    border-radius: 12px;
+    box-shadow: 2px 2px #f1f1f1;
+}
+
+.badge.primary {
+    color: white;
+    background-color: #6e41e2;
+    border: 1px solid #6e41e2;
+    box-shadow: none;
+}
+
+.badge.secondary {
+    color: #6e41e2;
+    border: 1px solid #6e41e2;
+    box-shadow: none;
+}

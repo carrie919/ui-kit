@@ -1,0 +1,125 @@
+.custom-button {
+	min-width: 40px;
+	width: auto;
+	height: 40px;
+	letter-spacing: 0.5px;
+	font-size: 16px;
+	padding: 0 5px 0 5px;
+	font-family: sans-serif;
+	font-weight: bolder;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button-label {
+	padding: 0px 5px;
+}
+
+.custom-button.primary {
+	color: white;
+	background-color: #6e41e2;
+	border: 2px solid #6e41e2;
+	border-radius: 4px;
+}
+
+.custom-button.primary:hover {
+	background-color: #5835b0;
+	border: 2px solid #5835b0;
+}
+
+.custom-button.primary:active {
+	background-color: #472ca8;
+	border: 2px solid #472ca8;
+}
+
+.custom-button.primary:disabled {
+	background-color: #e3daf9;
+	border: 2px solid #e3d8f9;
+}
+
+.custom-button.primary:focus {
+	background-color: #6e41e2;
+	border: 2px solid black;
+}
+
+.custom-button.secondary {
+	color: #6e41e2;
+	background-color: white;
+	border: 2px solid #6e41e2;
+	border-radius: 4px;
+}
+
+.custom-button.secondary:hover {
+	color: #5835b0;
+	background-color: #f1f1f1;
+	border: 2px solid #5835b0;
+}
+
+.custom-button.secondary:active {
+	color: #472ca8;
+	background-color: #d4d4d4;
+	border: 2px solid #472ca8;
+}
+
+.custom-button.secondary:disabled {
+	color: #e3daf9;
+	border: 2px solid #e3d8f9;
+}
+
+.custom-button.secondary:focus {
+	color: #6e41e2;
+	border: 2px solid black;
+}
+
+.custom-button.flat {
+	color: #6e41e2;
+	background-color: white;
+	border: 2px solid white;
+	border-radius: 4px;
+}
+
+.custom-button.flat:hover {
+	color: #5835b0;
+	background-color: #f1f1f1;
+}
+
+.custom-button.flat:active {
+	color: #472ca8;
+	background-color: #d4d4d4;
+}
+
+.custom-button.flat:disabled {
+	color: #e3daf9;
+	border: 2px solid #e3d8f9;
+}
+
+.custom-button.flat:focus {
+	color: #6e41e2;
+	border: 2px solid black;
+}
+
+.custom-button.secondary-dark {
+	color: black;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 4px;
+}
+
+.custom-button.secondary-dark:hover {
+	background-color: #f1f1f1;
+}
+
+.custom-button.secondary-dark:active {
+	background-color: #d4d4d4;
+}
+
+.custom-button.secondary-dark:disabled {
+	color: #f1f1f1;
+	border: 2px solid #f1f1f1;
+}
+
+.custom-button.secondary-dark:focus {
+	border: 2px solid #f1f1f1;
+}

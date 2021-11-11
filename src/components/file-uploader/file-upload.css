@@ -1,0 +1,80 @@
+.file-upload {
+    width: 70%;
+    max-width: 600px;
+    height: 90px;
+    display: inline-block;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: 0.05em 0.05em 0.50em rgba(0, 0, 0, 0.3);
+    font-family: sans-serif;
+}
+
+.file-upload:hover {
+    box-shadow: 0.2em 0.2em 0.75em rgba(0, 0, 0, 0.3);
+}
+
+.drag-and-drop-container {
+    border-radius: inherit;
+}
+
+.browse-report-container {
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.browse-btn-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.input-btn-label {
+    color: #6e41e2;
+    display: inline-block;
+    padding-right: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#btn-for-file-upload {
+    display: none;
+}
+
+.instruction-area {
+    font-size: 18px;
+}
+
+.stuff-des {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    opacity: 0.5;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.stuff-des.upload-report {
+    opacity: '1';
+    color: red;
+}
+
+.avatar-container {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    height: 50px;
+    width: 50px;
+    background-color: gainsboro;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-avatar {
+    height: 35px;
+    width: 35px;
+}

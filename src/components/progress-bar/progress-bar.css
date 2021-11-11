@@ -1,0 +1,15 @@
+.progress-bar {
+    width: 100%;
+    margin-top: 0px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    position: absolute;
+    bottom: 0;
+}
+
+.amount-done {
+    height: 100%;
+    border-radius: inherit;
+    text-align: right;
+    transition: width 1s ease-in-out;
+}

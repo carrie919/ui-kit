@@ -1,0 +1,28 @@
+.tab-list-item {
+    display: inline-block;
+    list-style: none;
+    padding: 0.5rem 0.75rem;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.active-tab {
+    background-color: white;
+    border-bottom: 2px solid #ccc;
+}
+
+.active-tab:hover {
+    border-bottom-color: #6e41e2;
+}
+
+.tab-list-item.large {
+    width: 60px;
+}
+
+.tab-list-item.medium {
+    width: 55px;
+}
+
+.tab-list-item.small {
+    width: 50px;
+}
