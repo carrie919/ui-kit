@@ -1,32 +1,76 @@
-.custom-tag{
-    color: white;
-    background-color: #6341E2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
+.custom-tag {
+    box-sizing: border-box;
     font-family: sans-serif;
     font-weight: bold;
     letter-spacing: .02rem;
-    padding: 2px 6px;
+    padding: 1px 18px 1px 3px;
     border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: 4px;
+    position: relative;
+    color: white;
+    background-color: #6341E2;
+    margin: 1px;
 }
 
-.custom-tag.white{
+.custom-tag.small {
+    height: 20px;
+    font-size: 12px;
+}
+
+.custom-tag.medium {
+    height: 22px;
+    font-size: 14px;
+}
+
+.custom-tag::before, .custom-tag::after {
+    content: '';
+    height: 2px;
+    width: 12px;
+    position: absolute;
+    right: 3px;
+    top: 44%;
+    border: none;
+    background-color: gray;
+}
+
+.custom-tag::after {
+    transform: rotate(45deg);
+}
+
+.custom-tag::before {
+    transform: rotate(-45deg);
+}
+
+.custom-tag.white {
     color: #6341E2;
     background-color: white;
 }
 
-.custom-tag.white:hover{
+.custom-tag.white:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.custom-tag.primary{
+.custom-tag.primary {
     color: white;
     background-color: #6341E2;
 }
 
-.custom-tag.primary:hover{
+.custom-tag.primary:hover {
     background-color: #5835b0;
+}
+
+.primary::after {
+    background-color: white;
+}
+
+.primary::before {
+    background-color: white;
+}
+
+.white:hover::before {
+    background-color: black;
+}
+
+.white:hover::after {
+    background-color: black;
 }
