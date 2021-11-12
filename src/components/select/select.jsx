@@ -28,17 +28,13 @@ const Select = ({
 
     return (
         <div className={`custom-select${isMenuDropped ? ' menu-dropped' : ''}`}>
-            {
-                label ? (
-                    <label
-                        className={
-                            `select-input-label${isFocused || value || placeholder ? ' shrink' : ''}`
-                        }
-                    >
-                        {label}
-                    </label>
-                ) : null
-            }
+            <label
+                className={
+                    `select-input-label${isFocused || value || placeholder ? ' shrink' : ''}`
+                }
+            >
+                {label}
+            </label>
             <input
                 type="search"
                 className='select'
@@ -50,9 +46,9 @@ const Select = ({
                 readOnly
             />
             {
-                value ? 
-                (<buttom className='clear-select cus-sel-but' onClick={clearSelectInput}></buttom>)
-                : null
+                value ?
+                    (<buttom className='clear-select cus-sel-but' onClick={clearSelectInput}></buttom>)
+                    : null
             }
             <button className='dropdown-button cus-sel-but' onClick={displayMenu}></button>
             <div className='dropdown-menu'>
@@ -60,7 +56,7 @@ const Select = ({
                     dropdownMenu.map((menuItem, index) => (
                         <span
                             key={index}
-                            className={`dropdown-menu-item${ menuItem === value ? ' selected' : ''}`}
+                            className={`dropdown-menu-item${menuItem === value ? ' selected' : ''}`}
                             onClick={handleItemSelect}
                         >
                             {menuItem}
