@@ -2,27 +2,45 @@ import React, { useState } from 'react';
 
 import './search.css';
 
-const Search = ({ placeholder, handler, searchResults }) => {
+import Loader from '../loader/loader';
 
+const Search = ({ value, placeholder, handler, searchResults }) => {
+    const [inputValue, setInputValue] = useState(value);
+
+    const clearInput = () => {
+        setInputValue('')
+    }
 
     return (
         <div className='custom-search'>
-            <input
-                className='search'
-                type='search'
-                placeholder={placeholder}
-                onChange={handler}
-            >
-            </input>
+            <div className='input-wrapper'>
+                <input
+                    className='search'
+                    type='search'
+                    value={inputValue}
+                    placeholder={placeholder}
+                    onChange={handler}
+                >
+                </input>
+                <button className='clear-search' onClick={clearInput}></button>
+            </div>
             {
                 searchResults ? (
-                    <ul className='search-results-container'>
+                    <div className='search-results-container'>
                         {
-                            searchResults.map(result => {
-                                return <li className='search-result'>{result}</li>
-                            })
+                            searchResults.map((result, index) => (
+                                result.length !== 0 ? (
+                                    <span
+                                        key={index}
+                                        className='search-result'
+                                        style={result === 'no results' ? { color: 'gray' } : null}
+                                    >
+                                        {result}
+                                    </span>
+                                ) : <Loader customClass='loading' />
+                            ))
                         }
-                    </ul>
+                    </div>
                 ) : null
             }
         </div>

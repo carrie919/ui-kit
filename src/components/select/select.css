@@ -1,0 +1,106 @@
+.custom-select {
+    font-family: sans-serif;
+    width: 300px;
+    position: relative;
+}
+
+.select {
+    height: 40px;
+    width: 300px;
+    padding: 5px 35px;
+    font-size: 14px;
+    border-radius: 4px;
+    box-shadow: 0.1em 0.1em 0.75em rgba(0, 0, 0, 0.3);
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+    background-repeat: no-repeat;
+    background-image: url("https://img.icons8.com/ios-glyphs/30/000000/search--v1.png");
+    background-position: 10px;
+    background-size: auto 50%;
+}
+
+.dropdown-button {
+    position: absolute;
+}
+
+.cus-sel-but {
+    height: 40px;
+    width: 30px;
+    padding: 0;
+    border: none;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.clear-select {
+    right: 30px;
+    background-image: url("https://img.icons8.com/material-rounded/24/000000/multiply--v1.png");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 6px 11px;
+    background-size: 18px 18px;
+}
+
+.clear-select:hover {
+    background-image: url("https://img.icons8.com/ios-glyphs/30/000000/multiply.png");
+}
+
+.dropdown-button {
+    right: 0;
+}
+
+.dropdown-button::before, .dropdown-button::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 9px;
+    border: none;
+    background-color: black;
+    transition: 0.2s all ease-in-out;
+}
+
+.dropdown-button::before {
+    left: 13px;
+    transform: rotate(-45deg);
+}
+
+.menu-dropped .dropdown-button::before {
+    transform: rotate(45deg);
+}
+
+.dropdown-button::after {
+    right: 13px;
+    transform: rotate(45deg);
+}
+
+.menu-dropped .dropdown-button::after {
+    transform: rotate(-45deg);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 45px;
+    width: 300px;
+    padding: 0px;
+    margin-top: 5px;
+    border-radius: 4px;
+    box-shadow: 0.1em 0.1em 0.75em rgba(0, 0, 0, 0.3);
+}
+
+.menu-dropped  .dropdown-menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-menu-item {
+    display: block;
+    height: 17px;
+    width: 93%;
+    margin: 8px 10px;
+    font-size: 14px;
+}

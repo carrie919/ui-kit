@@ -1,0 +1,21 @@
+.custom-loader{
+    position: relative;
+    display: block;
+    background-color: rgb(226, 226, 226);
+}
+
+.load-slider{
+    display: inline-block;
+    height: 100%;
+    width: 0%;
+    background-image: linear-gradient(to right, rgb(228, 228, 228), rgb(235, 235, 235));
+    left: 0px;
+
+    animation: loader 2s ease-in-out infinite;
+}
+
+@keyframes loader {
+    to {
+        width: 100%;
+    }
+}
