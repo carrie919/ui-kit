@@ -4,12 +4,7 @@ import './search.css';
 
 import Loader from '../loader/loader';
 
-const Search = ({ value, placeholder, handler, searchResults }) => {
-    const [inputValue, setInputValue] = useState(value);
-
-    const clearInput = () => {
-        setInputValue('')
-    }
+const Search = ({ value, placeholder, handler, clearInput, searchResultClick, searchResults }) => {
 
     return (
         <div className='custom-search'>
@@ -17,7 +12,7 @@ const Search = ({ value, placeholder, handler, searchResults }) => {
                 <input
                     className='search'
                     type='search'
-                    value={inputValue}
+                    value={value}
                     placeholder={placeholder}
                     onChange={handler}
                 >
@@ -34,6 +29,7 @@ const Search = ({ value, placeholder, handler, searchResults }) => {
                                         key={index}
                                         className='search-result'
                                         style={result === 'no results' ? { color: 'gray' } : null}
+                                        onClick={searchResultClick}
                                     >
                                         {result}
                                     </span>

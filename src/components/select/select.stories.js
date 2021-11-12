@@ -11,5 +11,11 @@ const Template = (args) => <Select {...args} />
 
 export const customSelect = Template.bind({});
 customSelect.args = {
-    dropdownMenu: [ 'Thailand', 'Germany', 'Canada', 'Brasil' ]
+    label: 'Your country',
+    value:'Germany',
+    placeholder: 'Example Russia',
+    dropdownMenu: [ 'Thailand', 'Germany', 'Canada', 'Brasil' ],
+    handleChange: (e) => {
+        console.log(e.target.value)
+    }
 }
